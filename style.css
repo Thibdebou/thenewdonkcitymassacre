@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    color: darkred;
+    font-family: "Roboto", sans-serif;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.089) 50%,
+            transparent 50%
+        );
+
+    background-size: 100% 4px;
+}
+
+
+header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.warning {
+    font-size: 25px;
+    margin: 5px;
+}
+
+
+.mature {
+    font-size: 25px;
+    margin: 5px;
+}
+
+
+.wanted {
+    font-size: 35px;
+    margin: 5px;
+
+    text-decoration: underline;
+}
+
+
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+.crime-section {
+    display: flex;
+
+    gap: 50px;
+
+    margin: 0 20px;
+}
+
+
+.crime-text {
+    width: 55%;
+
+    font-size: 27px;
+    line-height: 1.45;
+}
+
+
+.criminal-image {
+    width: 45%;
+
+    text-align: center;
+}
+
+
+.criminal-image img {
+    width: 100%;
+}
+
+
+.criminal-image p {
+    color: white;
+
+    font-size: 20px;
+}
+
+
+.crime-scene {
+    display: flex;
+
+    gap: 50px;
+
+    margin: 40px 20px;
+}
+
+
+.scene-image {
+    width: 50%;
+}
+
+
+.scene-image video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.scene-image p {
+    color: white;
+
+    font-size: 20px;
+}
+
+
+.scene-text {
+    width: 50%;
+
+    font-size: 25px;
+    line-height: 1.4;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.criminal-info {
+    color: white;
+    font-size: 14px;
+    text-align: left;
+
+    border-left: 2px solid darkred;
+
+    padding-left: 15px;
+}
+
+.archive {
+    color: white;
+    font-size: 12px;
+    opacity: 0.6;
+    text-align: right;
+    margin: 10px 20px;
+}
+
+.message {
+    text-align: center;
+
+    font-size: 30px;
+
+    margin: 70px auto;
+
+    max-width: 800px;
+}
+
+.classified {
+    color: darkred;
+
+    border: 2px solid darkred;
+
+    display: inline-block;
+
+    padding: 5px 15px;
+
+    transform: rotate(-5deg);
+
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+
+    .crime-section {
+        flex-direction: column;
+    }
+
+    .crime-text {
+        width: 100%;
+    }
+
+    .criminal-image {
+        width: 100%;
+    }
+
+
+     .crime-scene {
+        flex-direction: column;
+    }
+    
+     .scene-image {
+        width: 100%;
+     }
+    
+    .scene-text {
+        width: 100%;
+    }
+    
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .crime-text {
+        font-size: 20px;
+    }
+
+    .message {
+        font-size: 22px;
+    }
+}
